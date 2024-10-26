@@ -1,0 +1,68 @@
+.text-center-h {
+  font-size: 2.3rem !important;
+}
+
+header {
+  background-color: rgb(38, 41, 43);
+  color: #ffffff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0 4px; /* Симметричный отступ между кнопками */
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn.add-class {
+  background-color: red !important;
+  border-color: red !important;
+}
