@@ -33,8 +33,8 @@ const MovieDetail = () => {
     fetchMovieDetails();
   }, [id]);
 
-  if (loading) return <p>Загрузка...</p>;
-  if (error) return <p>Ошибка: {error}</p>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="movie-detail__wrap">
@@ -54,7 +54,7 @@ const MovieDetail = () => {
               <h1>{movie.title}</h1>
               <p>{movie.overview}</p>
               <p className="release-date">Release Date: {movie.release_date}</p>
-              {movie.homepage && (
+              {/* {movie.homepage && (
                 <a
                   href={movie.homepage}
                   target="_blank"
@@ -63,9 +63,23 @@ const MovieDetail = () => {
                 >
                   movie info
                 </a>
+              )} */}
+              {/* ==================================================== */}
+              {movie.homepage ? (
+                <a
+                  href={movie.homepage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="movie-info"
+                >
+                  movie info
+                </a>
+              ) : (
+                <span className="movie-info__no">No information available</span>
               )}
+              {/* ==================================================== */}
               <p className="rating">
-                Rating:{" "}
+                Rating:
                 <span>
                   <StarRating rating={movie.vote_average} />
                 </span>

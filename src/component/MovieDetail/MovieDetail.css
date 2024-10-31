@@ -60,8 +60,22 @@
 }
 
 .movie-info {
-  font-size: 1.8rem;
+  color: blue;
+  font-size: 1.9rem;
   padding: 20px 0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.movie-info:hover {
+  color: red;
+}
+
+.movie-info__no {
+  color: red;
+  font-size: 1.9rem;
+  padding: 20px 0;
+  text-decoration: underline;
 }
 
 /* Медиазапрос для ширины экрана 720px и меньше */
