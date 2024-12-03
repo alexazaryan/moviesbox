@@ -12,6 +12,7 @@ const App = () => {
     <>
       <Router basename="/moviesbox">
         <Header setCategory={setCategory} />
+
         <Routes>
           <Route path="/" element={<MovieList category={category} />} />
 

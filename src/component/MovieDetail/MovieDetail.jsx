@@ -9,7 +9,7 @@ const MovieDetail = () => {
   const { id } = useParams(); // Читаем параметр id из URL
   const navigate = useNavigate(); // Для навигации
 
-  const [movie, setMovie] = useState(null);
+  const [movie, setMovie] = useState(null); //
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -40,7 +40,7 @@ const MovieDetail = () => {
     <div className="movie-detail__wrap">
       <div className="movie-detail">
         {movie ? (
-          <div className="movie-detail-content">
+          <di v className="movie-detail-content">
             <img
               className="movie-detail-img"
               src={
@@ -54,17 +54,7 @@ const MovieDetail = () => {
               <h1>{movie.title}</h1>
               <p>{movie.overview}</p>
               <p className="release-date">Release Date: {movie.release_date}</p>
-              {/* {movie.homepage && (
-                <a
-                  href={movie.homepage}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="movie-info"
-                >
-                  movie info
-                </a>
-              )} */}
-              {/* ==================================================== */}
+
               {movie.homepage ? (
                 <a
                   href={movie.homepage}
@@ -86,10 +76,10 @@ const MovieDetail = () => {
                 {movie.vote_average}
               </p>
               <button className="btn btn-primary" onClick={() => navigate(-1)}>
-                Назад
+                Back
               </button>
             </div>
-          </div>
+          </di>
         ) : (
           <p>Фильм не найден</p>
         )}

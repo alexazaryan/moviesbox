@@ -5,7 +5,7 @@
 .star {
   font-size: 24px;
   color: #e0e0e0;
-  position: relative;
+  /* position: relative; */
 }
 
 .star.filled {
@@ -15,7 +15,7 @@
 .star.half::before {
   content: "★";
   color: #ffcc00;
-  position: absolute;
+  /* position: absolute; */
   width: 50%;
   overflow: hidden;
   left: 0;

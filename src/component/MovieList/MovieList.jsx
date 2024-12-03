@@ -9,8 +9,6 @@ import MovieCard from "../MovieCard/MovieCard";
 import "./MovieList.css";
 
 const MovieList = ({ category }) => {
-  
-  // Принимаем category как пропс
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
