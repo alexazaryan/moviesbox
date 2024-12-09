@@ -7,11 +7,11 @@ import "./Header.css";
 const Header = ({ setCategory }) => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("popular"); // Состояние для хранения активной категории
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 680); // Состояние для мобильного вида
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 910); // Состояние для мобильного вида
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 680);
+      setIsMobile(window.innerWidth < 910);
     };
 
     window.addEventListener("resize", handleResize);
