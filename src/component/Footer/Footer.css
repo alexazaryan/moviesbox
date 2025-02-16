@@ -1,3 +1,8 @@
+.fade-out {
+  background: red;
+  opacity: 0;
+}
+
 footer {
   background-color: rgb(38, 41, 43);
   color: #ffffff;

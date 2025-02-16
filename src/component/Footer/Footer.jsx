@@ -1,8 +1,8 @@
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ fade }) => {
   return (
-    <footer className="bg-dark text-white py-4">
+    <footer className={`bg-dark text-white py-4 ${fade ? "fade-out" : ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-4 mb-3">
