@@ -14,7 +14,7 @@ const App = () => {
 
   const handleFooterFade = () => {
     setFade(true); // Сразу скрываем футер
-    setTimeout(() => setFade(false), 1000);
+    setTimeout(() => setFade(false), 500);
   };
 
   useEffect(() => {
