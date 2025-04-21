@@ -7,9 +7,10 @@
    "scripts": {
       "dev": "vite",
       "build": "vite build",
-      "build-gh": "DEPLOY_ENV=GH vite build",
-      "predeploy": "npm run build-gh",
-      "deploy": "gh-pages -d dist"
+      "lint": "eslint .",
+      "preview": "vite preview",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
    },
    "dependencies": {
       "react": "^18.3.1",
