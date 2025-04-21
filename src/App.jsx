@@ -5,7 +5,7 @@ import MovieDetail from "./component/MovieDetail/MovieDetail";
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 
-import "./App.css";
+
 
 const App = () => {
    const [category, setCategory] = useState("popular"); // Состояние для категории
