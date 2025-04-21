@@ -8,33 +8,33 @@ import Footer from "./component/Footer/Footer";
 import "./App.css";
 
 const App = () => {
-  const [category, setCategory] = useState("popular"); // Состояние для категории
+   const [category, setCategory] = useState("popular"); // Состояние для категории
 
-  const [fade, setFade] = useState(false);
+   const [fade, setFade] = useState(false);
 
-  const handleFooterFade = () => {
-    setFade(true); // Сразу скрываем футер
-    setTimeout(() => setFade(false), 500);
-  };
+   const handleFooterFade = () => {
+      setFade(true); // Сразу скрываем футер
+      setTimeout(() => setFade(false), 500);
+   };
 
-  useEffect(() => {
-    handleFooterFade();
-  }, [category]);
+   useEffect(() => {
+      handleFooterFade();
+   }, [category]);
 
-  return (
-    <>
-      <Router basename="/moviesbox/">
-        <Header setCategory={setCategory} />
-        <Routes>
-          <Route path="/" element={<MovieList category={category} />} />
+   return (
+      <>
+         <Router basename="/">
+            <Header setCategory={setCategory} />
+            <Routes>
+               <Route path="/" element={<MovieList category={category} />} />
 
-          <Route path="/movie/:id" element={<MovieDetail />} />
-        </Routes>
-        {/* <Footer /> */}
-        <Footer fade={fade} />
-      </Router>
-    </>
-  );
+               <Route path="/movie/:id" element={<MovieDetail />} />
+            </Routes>
+            {/* <Footer /> */}
+            <Footer fade={fade} />
+         </Router>
+      </>
+   );
 };
 
 export default App;

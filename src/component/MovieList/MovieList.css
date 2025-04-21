@@ -1,8 +1,9 @@
 .movie-list {
-  max-width: 1600px;
-  margin: 35px auto;
-  display: flex;
-  flex: 0 0 20%;
-  flex-wrap: wrap;
-  justify-content: center;
+   max-width: 1600px;
+   margin: 35px auto;
+   display: flex;
+   flex: 1;
+   flex: 0 0 20%;
+   flex-wrap: wrap;
+   justify-content: center;
 }

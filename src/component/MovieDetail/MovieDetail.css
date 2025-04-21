@@ -1,93 +1,94 @@
 .movie-detail__wrap {
-  background: url(/public/hall.jpg) center / cover;
+   background: url(/public/hall.jpg) center / cover;
+   flex: 1;
 }
 
 .movie-detail {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px;
 }
 
 .movie-detail-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   width: 100%;
 }
 
 .movie-detail img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  margin-right: 20px;
+   max-width: 400px;
+   height: auto;
+   border-radius: 10px;
+   margin-right: 20px;
 }
 
 .movie-detail h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 10px;
+   text-align: center;
 }
 
 .movie-detail-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
 
-  margin-left: 50px;
-  color: white;
+   margin-left: 50px;
+   color: white;
 }
 
 .movie-detail p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+   font-size: 1.2rem;
+   margin-bottom: 10px;
 }
 
 .movie-detail .rating {
-  font-weight: bold;
-  color: #ffcc00;
+   font-weight: bold;
+   color: #ffcc00;
 }
 
 .movie-detail-img {
-  width: 350px;
-  box-shadow: 0 0 150px rgba(255, 255, 255, 0.6);
-  border-radius: 12px;
+   width: 350px;
+   box-shadow: 0 0 150px rgba(255, 255, 255, 0.6);
+   border-radius: 12px;
 }
 
 .release-date {
-  font-weight: bold;
+   font-weight: bold;
 }
 
 .movie-info {
-  color: blue;
-  font-size: 1.9rem;
-  padding: 20px 0;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+   color: blue;
+   font-size: 1.9rem;
+   padding: 20px 0;
+   text-decoration: underline;
+   transition: color 0.3s ease;
 }
 
 .movie-info:hover {
-  color: red;
+   color: red;
 }
 
 .movie-info__no {
-  color: red;
-  font-size: 1.9rem;
-  padding: 20px 0;
-  text-decoration: underline;
+   color: red;
+   font-size: 1.9rem;
+   padding: 20px 0;
+   text-decoration: underline;
 }
 
 /* Медиазапрос для ширины экрана 720px и меньше */
 @media (max-width: 720px) {
-  .movie-detail-content {
-    flex-direction: column;
-    align-items: center;
-  }
+   .movie-detail-content {
+      flex-direction: column;
+      align-items: center;
+   }
 
-  .movie-detail img {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+   .movie-detail img {
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
 }
